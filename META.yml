@@ -1,10 +1,27 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         File-Modified
-version:      0.07
-version_from: lib/File/Modified.pm
-installdirs:  site
+---
+abstract: 'checks intelligently if files have changed'
+author:
+  - 'Max Maischein <corion@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 0
+  Test::More: 0.88
+configure_requires:
+  ExtUtils::MakeMaker: 6.3
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.94, CPAN::Meta::Converter version 2.133380'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: File-Modified
+no_index:
+  directory:
+    - t
+    - inc
 requires:
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.24
+  perl: 5.006
+  strict: 0
+  warnings: 0
+resources:
+  repository: git://github.com/neilbowers/File-Modified.git
+version: 0.08
